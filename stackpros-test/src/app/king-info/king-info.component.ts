@@ -19,7 +19,7 @@ export class KingInfoComponent implements OnInit {
             
   }
 
-    //class method
+  //class method
   updateArray(kingInfo){
         
     //exclude kings form "House of Wessex"

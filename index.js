@@ -1,10 +1,12 @@
-var PORT = process.env.PORT || 3000; //set the port dynamically if 3000 is not available
 const express = require('express');
 const app = express();
 const cors = require('cors');
 const path = require('path');
 
-// CORS Middleware 
+//set the port dynamically if 3000 is not available
+var PORT = process.env.PORT || 3000; 
+
+// CORS Middleware
 app.use(cors());
 
 // API endpoint will appear in routes/routes.js 
@@ -20,8 +22,3 @@ app.get('*', (req, res) => {
 var server = app.listen(PORT, function() {
     console.log("Listening to port %s...", server.address().port);
 })
-
-
-
-
-
