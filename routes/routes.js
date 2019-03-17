@@ -3,9 +3,9 @@ const axios = require('axios');
 const appRouter = function(app){
     
     // GET data form mysafeinfo.com
-    app.get("/data", function(req, res) {
+    app.get("/", function(req, res) {
         // use AXIOS for sending http request
-        axios.get('http://mysafeinfo.com/api/data?list=englishmonarchs&format=json', {headers: {
+        axios.get('http://mysafeinfo.com/api/data?list=englishmonarchs&format=json', {headers: { 'Accept': 'application/json',
             'Accept-Charset': 'utf-8' }
         })
         .then((response) => {

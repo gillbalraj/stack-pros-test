@@ -13,8 +13,9 @@ import { KingInfoComponent } from './king-info/king-info.component';
   imports: [
     BrowserModule,
     HttpClientModule
-  ],
+  ], 
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
+ 

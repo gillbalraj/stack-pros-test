@@ -9,11 +9,10 @@ export class GetKingInfoService {
 
   constructor(private http: HttpClient) { }
   
-  // private _url = "http://mysafeinfo.com/api/data?list=englishmonarchs&format=json";
   //method to get data from API
   data() {
-    const  headers = new  HttpHeaders().set("X-CustomHttpHeader", "CUSTOM_VALUE");
-
-    return this.http.get('http://localhost:3000/data',{headers});
+    const  headers = new  HttpHeaders().set("Content-Type", "application/json");
+    return this.http.get('http://localhost:3000/',{headers});
+    
   }
 }
