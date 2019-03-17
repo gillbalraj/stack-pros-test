@@ -8,11 +8,11 @@ import { from } from 'rxjs';
 export class GetKingInfoService {
 
   constructor(private http: HttpClient) { }
-  
+  private _url = 'http://localhost:3000';
   //method to get data from API
   data() {
-    const  headers = new  HttpHeaders().set("Content-Type", "application/json");
-    return this.http.get('http://localhost:3000/',{headers});
     
+    const  headers = new  HttpHeaders().set("Content-Type", "application/json");
+    return this.http.get(this._url,{headers});   
   }
 }

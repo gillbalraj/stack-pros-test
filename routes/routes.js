@@ -15,7 +15,7 @@ const appRouter = function(app){
         .catch((error) => {
             console.log(error);
         });
-    })
+    });
 }
 
 // exporting appRouter to be used by service, inside Angular code

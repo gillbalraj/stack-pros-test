@@ -143,11 +143,10 @@ var GetKingInfoService = /** @class */ (function () {
     function GetKingInfoService(http) {
         this.http = http;
     }
-    // private _url = "http://mysafeinfo.com/api/data?list=englishmonarchs&format=json";
     //method to get data from API
     GetKingInfoService.prototype.data = function () {
         var headers = new _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpHeaders"]().set("Content-Type", "application/json");
-        return this.http.get('http://localhost:3000/data', { headers: headers });
+        return this.http.get('http://localhost:3000/', { headers: headers });
     };
     GetKingInfoService = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Injectable"])({

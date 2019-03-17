@@ -4,7 +4,7 @@ const app = express();
 const cors = require('cors');
 const path = require('path');
 
-// CORS Middleware
+// CORS Middleware 
 app.use(cors());
 
 // API endpoint will appear in routes/routes.js 
