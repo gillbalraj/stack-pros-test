@@ -1,7 +1,7 @@
 const axios = require('axios');
 
-var appRouter = function(app){
-
+const appRouter = function(app){
+    
     // GET data form mysafeinfo.com
     app.get("/", function(req, res) {
         // use AXIOS for sending http request
@@ -9,8 +9,8 @@ var appRouter = function(app){
             'Accept-Charset': 'utf-8' }
         })
         .then((response) => {
-            res.send(response.data);
-            console.log(response.data)
+            console.log(response.data);
+            res.send(response.data);         
         })
         .catch((error) => {
             console.log(error);
