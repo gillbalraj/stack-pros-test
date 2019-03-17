@@ -3,7 +3,7 @@ const axios = require('axios');
 const appRouter = function(app){
     
     // GET data form mysafeinfo.com
-    app.get("/", function(req, res) {
+    app.get("/data", function(req, res) {
         // use AXIOS for sending http request
         axios.get('http://mysafeinfo.com/api/data?list=englishmonarchs&format=json', {headers: {
             'Accept-Charset': 'utf-8' }
